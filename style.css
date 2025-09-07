@@ -130,3 +130,47 @@ body {
     font-size: 3rem;
     font-weight: bold;
 }
+/* Media Query für kleine Bildschirme (Handys) */
+@media (max-width: 768px) {
+    /* Navbar-Anpassungen */
+    .navbar {
+        flex-direction: column; /* Links unter das Logo stapeln */
+        align-items: flex-start; /* Elemente linksbündig ausrichten */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Navigations-Links untereinander anordnen */
+        width: 100%; /* Links über die gesamte Breite anzeigen */
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0; /* Vertikalen Abstand zwischen den Links hinzufügen */
+    }
+
+    /* Hero Section-Anpassungen */
+    .hero-section {
+        flex-direction: column; /* Inhalt untereinander stapeln */
+        justify-content: center; /* Inhalt mittig anordnen */
+        padding: 2rem 5%;
+        height: auto; /* Höhe an Inhalt anpassen */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Inhalt volle Breite einnehmen lassen */
+        text-align: center; /* Text zentrieren */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Schriftgröße für Überschrift verkleinern */
+    }
+    
+    .hero-content p {
+        font-size: 1rem; /* Schriftgröße für Text verkleinern */
+    }
+
+    /* Diagonales Overlay auf Handys ausblenden */
+    .hero-image-overlay {
+        display: none;
+    }
+}
